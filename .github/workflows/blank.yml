@@ -23,6 +23,6 @@ jobs:
           git config --global user.name "Vaishak Nair"
 
           target_branch="production"
-          reviewer="Omkarkhogre2"
+          reviewer="omkarkhogre2"
 
           gh pr create --base "$target_branch" --head "${GITHUB_REF#refs/heads/}" --title "Auto-generated Pull Request" --body "This pull request is automatically generated." --reviewer "$reviewer"
