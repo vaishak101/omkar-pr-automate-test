@@ -25,4 +25,4 @@ jobs:
           target_branch="production"
           reviewer="omkarkhogre2"
 
-          gh pr create --base "$target_branch" --head "${GITHUB_REF#refs/heads/}" --title "Auto-generated Pull Request" --body "This pull request is automatically generated." -r "$reviewer"
+          gh pr create --base "$target_branch" --head "${GITHUB_REF#refs/heads/}" --title "Auto-generated Pull Request" --body "This pull request is automatically generated." -r"$reviewer"
